@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
   }
+  p{
+    margin:auto;
+  }
   .grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
