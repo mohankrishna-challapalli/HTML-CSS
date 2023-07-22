@@ -1,40 +1,27 @@
-const nums = document.querySelectorAll(".nums span");
-const counter = document.querySelector(".counter");
-const finalMessage = document.querySelector(".final");
-const replay = document.querySelector("#replay");
+function startCountdown(duration, display) {
+  let timer = duration,
+    hours,
+    minutes,
+    seconds;
+  setInterval(function () {
+    hours = parseInt(timer / 3600, 10);
+    minutes = parseInt((timer % 3600) / 60, 10);
+    seconds = parseInt(timer % 60, 10);
 
-runAnimation();
+    hours = hours < 10 ? "0" + hours : hours;
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
 
-function resetDOM() {
-  counter.classList.remove("hide");
-  finalMessage.classList.remove("show");
+    display.textContent = hours + ":" + minutes + ":" + seconds;
 
-  nums.forEach((num) => {
-    num.classList.value = "";
-  });
-
-  nums[0].classList.add("in");
+    if (--timer < 0) {
+      timer = duration;
+    }
+  }, 1000);
 }
 
-function runAnimation() {
-  nums.forEach((num, idx) => {
-    const nextToLast = nums.length - 1;
+// Set the countdown time (in seconds)
+const countdownTime = 180; // Change this value to set the desired countdown time
 
-    num.addEventListener("animationend", (e) => {
-      if (e.animationName === "goIn" && idx !== nextToLast) {
-        num.classList.remove("in");
-        num.classList.add("out");
-      } else if (e.animationName === "goOut" && num.nextElementSibling) {
-        num.nextElementSibling.classList.add("in");
-      } else {
-        counter.classList.add("hide");
-        finalMessage.classList.add("show");
-      }
-    });
-  });
-}
-
-replay.addEventListener("click", () => {
-  resetDOM();
-  runAnimation();
-});
+const display = document.getElementById("timer");
+startCountdown(countdownTime, display);
