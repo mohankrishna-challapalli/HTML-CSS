@@ -1,0 +1,42 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.scroll-down-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  cursor: pointer;
+}
+
+.arrow {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: rotate(45deg);
+  margin: 0 auto;
+  animation: scrollPulse 1.5s infinite;
+}
+
+.content {
+  height: 1500px; /* Set the height according to your webpage content */
+}
+
+@keyframes scrollPulse {
+  0% {
+    transform: rotate(45deg) translateY(0);
+  }
+  50% {
+    transform: rotate(45deg) translateY(10px);
+  }
+  100% {
+    transform: rotate(45deg) translateY(0);
+  }
+}
