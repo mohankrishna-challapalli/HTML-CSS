@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative CSS Box Model</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f3f3f3;
+      }
+
+      .container {
+        border: 10px solid #5e35b1;
+        padding: 40px;
+        background-color: #f06292;
+        border-radius: 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      }
+
+      .content {
+        border: 10px solid #0288d1;
+        padding: 30px;
+        background-color: #4caf50;
+        border-radius: 15px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+      }
+
+      .inner-content {
+        border: 10px solid #ffeb3b;
+        padding: 20px;
+        background-color: #ff5722;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+
+      .text {
+        font-size: 24px;
+        color: white;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="inner-content">
+          <p class="text">CSS Box Model</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
