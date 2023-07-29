@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.empty {
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  border: solid 3px black;
+  background: white; /* Set the background color to white */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Add the drop shadow effect */
+  border-radius: 8px; /* Add a slightly curved border */
+}
+
+.fill {
+  background-image: url("https://i.stack.imgur.com/FdHky.jpg?s=256&g=1");
+  background-size: cover; /* Fit the background image inside .empty */
+  height: 145px;
+  width: 145px;
+  cursor: pointer;
+  border-radius: 8px; /* Add the same curved border effect */
+  overflow: hidden; /* Clip the background image to the rounded shape */
+}
+
+.hold {
+  border: solid 5px #ffcc00; /* Yellow border color */
+}
+
+.hovered {
+  background-color: #333;
+  border-color: #ffcc00; /* Yellow border color */
+  border-style: dashed;
+}
+
+@media (max-width: 800px) {
+  body {
+    flex-direction: column;
+  }
+}
