@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Music Player App</title>
+  </head>
+  <body>
+    <header>
+      <h1>Music Player App</h1>
+    </header>
+    <main>
+      <div class="music-player">
+        <div class="cover-art">
+          <img
+            id="cover-img"
+            src="images/default-cover.jpg"
+            alt="Album Cover"
+          />
+        </div>
+        <div class="track-info">
+          <h2 id="track-title">Track Title</h2>
+          <p id="artist-name">Artist Name</p>
+        </div>
+        <audio id="audio-player" controls>
+          <source id="audio-source" src="" type="audio/mp3" />
+        </audio>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
