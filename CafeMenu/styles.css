@@ -1,99 +1,116 @@
+/* Global Styling */
 body {
+  /* Sets the background image for the entire page */
   background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
-  font-family: sans-serif;
-  padding: 20px;
+  font-family: sans-serif; /* Sets the default font family */
+  padding: 20px; /* Adds padding around the content */
 }
 
+/* Heading Styles */
 h1 {
-  font-size: 40px;
-  margin-top: 0;
-  margin-bottom: 15px;
+  font-size: 40px; /* Sets the font size */
+  margin-top: 0; /* Removes top margin */
+  margin-bottom: 15px; /* Adds bottom margin */
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 30px; /* Sets the font size */
 }
 
+/* Styling for the "Est." text */
 .established {
-  font-style: italic;
+  font-style: italic; /* Sets font style to italic */
 }
 
+/* Center Alignment */
 h1,
 h2,
 p {
-  text-align: center;
+  text-align: center; /* Centers headings and paragraphs */
 }
 
+/* Main Container */
 .menu {
-  width: 80%;
-  background-color: burlywood;
-  margin-left: auto;
+  width: 80%; /* Sets the width of the menu container */
+  background-color: burlywood; /* Sets the background color */
+  margin-left: auto; /* Centers the container horizontally */
   margin-right: auto;
-  padding: 20px;
-  max-width: 500px;
+  padding: 20px; /* Adds padding inside the container */
+  max-width: 500px; /* Sets the maximum width of the container */
 }
 
+/* Centering Images */
 img {
-  display: block;
-  margin-left: auto;
+  display: block; /* Makes images a block-level element */
+  margin-left: auto; /* Centers the image horizontally */
   margin-right: auto;
 }
 
+/* Horizontal Line Styling */
 hr {
-  height: 2px;
-  background-color: brown;
-  border-color: brown;
+  height: 2px; /* Sets the height of the line */
+  background-color: brown; /* Sets the line color */
+  border-color: brown; /* Sets the border color */
 }
 
+/* Styling for horizontal line at the bottom */
 .bottom-line {
-  margin-top: 25px;
+  margin-top: 25px; /* Adds margin at the top of the line */
 }
 
+/* Applying Impact font to headings */
 h1,
 h2 {
-  font-family: Impact, serif;
+  font-family: Impact, serif; /* Sets font family to Impact or a fallback serif font */
 }
 
+/* Styling for menu item paragraphs */
 .item p {
-  display: inline-block;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  font-size: 18px;
+  display: inline-block; /* Displays paragraphs as inline blocks */
+  margin-top: 5px; /* Adds top margin */
+  margin-bottom: 5px; /* Adds bottom margin */
+  font-size: 18px; /* Sets the font size */
 }
 
+/* Styling for flavor and dessert names */
 .flavor,
 .dessert {
-  text-align: left;
-  width: 75%;
+  text-align: left; /* Aligns text to the left */
+  width: 75%; /* Sets the width of the text */
 }
 
+/* Styling for price information */
 .price {
-  text-align: right;
-  width: 25%;
+  text-align: right; /* Aligns text to the right */
+  width: 25%; /* Sets the width of the text */
 }
 
-/* FOOTER */
-
+/* Footer Styling */
 footer {
-  font-size: 14px;
+  font-size: 14px; /* Sets the font size for the footer */
 }
 
+/* Styling for address in the footer */
 .address {
-  margin-bottom: 5px;
+  margin-bottom: 5px; /* Adds bottom margin */
 }
 
+/* Styling for links */
 a {
-  color: black;
+  color: black; /* Sets the link color */
 }
 
+/* Styling for visited links */
 a:visited {
-  color: black;
+  color: black; /* Sets the visited link color */
 }
 
+/* Styling for hovered links */
 a:hover {
-  color: brown;
+  color: brown; /* Sets the link color on hover */
 }
 
+/* Styling for active links */
 a:active {
-  color: brown;
+  color: brown; /* Sets the link color when active */
 }

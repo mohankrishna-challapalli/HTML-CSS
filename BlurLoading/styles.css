@@ -1,32 +1,42 @@
+/* Importing Google Fonts */
 @import url("https://fonts.googleapis.com/css?family=Ubuntu");
 
+/* Global styling */
 * {
   box-sizing: border-box;
 }
 
+/* Styling for the entire page */
 body {
-  font-family: "Ubuntu", sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
-  margin: 0;
+  font-family: "Ubuntu", sans-serif; /* Sets the font-family to "Ubuntu" */
+  display: flex; /* Displays the content in a flex container */
+  align-items: center; /* Aligns content vertically centered */
+  justify-content: center; /* Aligns content horizontally centered */
+  height: 100vh; /* Sets the height of the body to 100% of the viewport height */
+  overflow: hidden; /* Hides overflow content to prevent scrolling */
+  margin: 0; /* Removes default margin from the body */
 }
 
+/* Styling for the background image */
 .bg {
+  /* Sets the background image and styles */
   background: url("https://images.unsplash.com/photo-1517976487492-5750f3195933?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80")
     no-repeat center center/cover;
-  position: absolute;
-  top: -30px;
-  left: -30px;
-  width: calc(100vw + 60px);
-  height: calc(100vh + 60px);
-  z-index: -1;
-  filter: blur(0px);
+  position: absolute; /* Positions the element absolutely within its container */
+  top: -30px; /* Moves the background up by 30px */
+  left: -30px; /* Moves the background left by 30px */
+  width: calc(
+    100vw + 60px
+  ); /* Sets the width to be slightly larger than viewport width */
+  height: calc(
+    100vh + 60px
+  ); /* Sets the height to be slightly larger than viewport height */
+  z-index: -1; /* Places the background behind other elements */
+  filter: blur(0px); /* Initially no blur */
 }
 
+/* Styling for the loading text */
 .loading-text {
-  font-size: 50px;
-  color: #fff;
+  font-size: 50px; /* Sets the font size */
+  color: #fff; /* Sets the text color to white */
 }
