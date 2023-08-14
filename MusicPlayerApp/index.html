@@ -7,11 +7,15 @@
     <title>Music Player App</title>
   </head>
   <body>
+    <!-- Header section -->
     <header>
       <h1>Music Player App</h1>
     </header>
+
+    <!-- Main content section -->
     <main>
       <div class="music-player">
+        <!-- Album cover art -->
         <div class="cover-art">
           <img
             id="cover-img"
@@ -19,15 +23,21 @@
             alt="Album Cover"
           />
         </div>
+
+        <!-- Track information -->
         <div class="track-info">
           <h2 id="track-title">Track Title</h2>
           <p id="artist-name">Artist Name</p>
         </div>
+
+        <!-- Audio player -->
         <audio id="audio-player" controls>
           <source id="audio-source" src="" type="audio/mp3" />
         </audio>
       </div>
     </main>
+
+    <!-- Load JavaScript code -->
     <script src="script.js"></script>
   </body>
 </html>

@@ -1,3 +1,4 @@
+/* Styling for the entire page */
 body {
   display: flex;
   justify-content: center;
@@ -7,6 +8,7 @@ body {
   background-color: #f3f3f3;
 }
 
+/* Styling for the box container */
 .box {
   width: 200px;
   height: 100px;
@@ -18,6 +20,7 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+/* Styling for paragraphs within the box */
 p {
   text-align: center;
   color: white;
@@ -25,6 +28,7 @@ p {
   margin: 0;
 }
 
+/* Styling for the box model properties section */
 .box-model-properties {
   margin-top: 30px;
   display: flex;
@@ -32,6 +36,7 @@ p {
   align-items: center;
 }
 
+/* Styling for individual property boxes */
 .property {
   text-align: center;
   padding: 10px;

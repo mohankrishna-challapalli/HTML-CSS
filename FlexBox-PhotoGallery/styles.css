@@ -1,13 +1,16 @@
+/* Apply box-sizing to all elements */
 * {
   box-sizing: border-box;
 }
 
+/* Reset default margin and set font for the entire page */
 body {
   margin: 0;
   font-family: sans-serif;
   background: #f5f6f7;
 }
 
+/* Styling for the header section */
 .header {
   text-align: center;
   text-transform: uppercase;
@@ -17,6 +20,7 @@ body {
   border-bottom: 4px solid #fdb347;
 }
 
+/* Styling for the photo gallery section */
 .gallery {
   display: flex;
   flex-direction: row;
@@ -29,6 +33,7 @@ body {
   padding: 20px 10px;
 }
 
+/* Styling for individual images in the gallery */
 .gallery img {
   width: 100%;
   max-width: 350px;
@@ -37,7 +42,8 @@ body {
   border-radius: 10px;
 }
 
+/* Create an invisible element to clear the floated images */
 .gallery::after {
   content: "";
-  width: 350px;
+  width: 350px; /* Width to match the individual image width */
 }

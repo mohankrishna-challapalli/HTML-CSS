@@ -1,34 +1,39 @@
+/* Apply box-sizing to all elements */
 * {
   box-sizing: border-box;
 }
 
+/* Set background color and layout for the body */
 body {
-  background-color: #111;
+  background-color: #111; /* Dark background color */
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  overflow: hidden;
-  margin: 0;
+  height: 100vh; /* 100% viewport height */
+  overflow: hidden; /* Hide scrollbars */
+  margin: 0; /* Remove default margin */
 }
 
+/* Container for the squares */
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  max-width: 400px;
+  flex-wrap: wrap; /* Allow squares to wrap on smaller screens */
+  max-width: 400px; /* Limit width of the container */
 }
 
+/* Styling for each square */
 .square {
-  background-color: #1d1d1d;
-  box-shadow: 0 0 2px #000;
-  height: 16px;
-  width: 16px;
-  margin: 2px;
-  transition: 2s ease;
+  background-color: #1d1d1d; /* Dark gray background color */
+  box-shadow: 0 0 2px #000; /* Small black box shadow */
+  height: 16px; /* Height of each square */
+  width: 16px; /* Width of each square */
+  margin: 2px; /* Margin between squares */
+  transition: 2s ease; /* Transition effect with 2 seconds duration */
 }
 
+/* Styling when hovering over a square */
 .square:hover {
-  transition-duration: 0s;
+  transition-duration: 0s; /* Disable transition duration on hover */
 }

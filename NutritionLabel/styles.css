@@ -1,102 +1,144 @@
+/* Global Styles */
+
+/* Apply "border-box" sizing model to all elements */
 * {
   box-sizing: border-box;
 }
 
+/* Set base font size for the entire HTML document */
 html {
   font-size: 16px;
 }
 
+/* Set font family for the entire body of the document */
 body {
   font-family: "Open Sans", sans-serif;
 }
 
+/* Label Styles */
+
+/* Styling for elements with class "label" */
 .label {
-  border: 2px solid black;
-  width: 270px;
-  margin: 20px auto;
-  padding: 0 7px;
+  border: 2px solid black; /* Add a black border with 2px width */
+  width: 270px; /* Set a fixed width of 270 pixels */
+  margin: 20px auto; /* Center the element horizontally with a top margin of 20px */
+  padding: 0 7px; /* Add padding of 0 on top/bottom and 7px on left/right */
 }
 
+/* Header Styles */
+
+/* Styling for <h1> elements inside a <header> */
 header h1 {
-  text-align: center;
-  margin: -4px 0;
-  letter-spacing: 0.15px;
+  text-align: center; /* Center-align the text */
+  margin: -4px 0; /* Adjust the top margin slightly */
+  letter-spacing: 0.15px; /* Add a small letter-spacing effect */
 }
 
+/* Paragraph Styles */
+
+/* Styling for <p> elements */
 p {
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
+  margin: 0; /* Remove margin on top and bottom */
+  display: flex; /* Use flexbox to display contents */
+  justify-content: space-between; /* Space content evenly between left and right edges */
 }
 
+/* Divider Styles */
+
+/* Styling for elements with class "divider" */
 .divider {
-  border-bottom: 1px solid #888989;
-  margin: 2px 0;
+  border-bottom: 1px solid #888989; /* Add a thin solid border at the bottom */
+  margin: 2px 0; /* Add a small margin on top and bottom */
 }
 
+/* Text Styles */
+
+/* Styling for elements with class "bold" */
 .bold {
-  font-weight: 800;
+  font-weight: 800; /* Set font weight to make text bold */
+}
+
+/* Styling for elements with class "large" and "medium" */
+.large,
+.medium {
+  background-color: black; /* Set background color to black */
+  border: 0; /* Remove border */
+}
+
+/* Additional height styles for "large" and "medium" */
+.medium {
+  height: 5px; /* Set height for medium elements */
 }
 
 .large {
-  height: 10px;
+  height: 10px; /* Set height for large elements */
 }
 
-.large,
-.medium {
-  background-color: black;
-  border: 0;
-}
-
-.medium {
-  height: 5px;
-}
-
+/* Styling for elements with class "small-text" */
 .small-text {
-  font-size: 0.85rem;
+  font-size: 0.85rem; /* Set smaller font size */
 }
 
+/* Calories Info Styles */
+
+/* Styling for elements with class "calories-info" */
 .calories-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  display: flex; /* Use flexbox to display contents */
+  justify-content: space-between; /* Space content evenly between left and right edges */
+  align-items: flex-end; /* Align items at the bottom */
 }
 
+/* Styling for <h2> elements inside "calories-info" */
 .calories-info h2 {
-  margin: 0;
+  margin: 0; /* Remove margin on top and bottom */
 }
 
+/* Styling for paragraphs inside "left-container" */
 .left-container p {
-  margin: -5px -2px;
-  font-size: 2em;
-  font-weight: 700;
+  margin: -5px -2px; /* Adjust margin to overlap adjacent elements */
+  font-size: 2em; /* Set larger font size */
+  font-weight: 700; /* Set font weight to make text bold */
 }
 
+/* Styling for <span> elements inside "calories-info" */
 .calories-info span {
-  margin: -7px -2px;
-  font-size: 2.4em;
-  font-weight: 700;
+  margin: -7px -2px; /* Adjust margin to overlap adjacent elements */
+  font-size: 2.4em; /* Set larger font size */
+  font-weight: 700; /* Set font weight to make text bold */
 }
 
+/* Right Alignment Styles */
+
+/* Styling for elements with class "right" */
 .right {
-  justify-content: flex-end;
+  justify-content: flex-end; /* Justify content to the right using flexbox */
 }
 
+/* Indentation Styles */
+
+/* Styling for elements with class "indent" */
 .indent {
-  margin-left: 1em;
+  margin-left: 1em; /* Add left indentation of 1em */
 }
 
+/* Styling for elements with class "double-indent" */
 .double-indent {
-  margin-left: 2em;
+  margin-left: 2em; /* Add left indentation of 2em */
 }
 
+/* Daily Value Styles */
+
+/* Styling for <p> elements inside "daily-value" class, except those with "no-divider" class */
 .daily-value p:not(.no-divider) {
-  border-bottom: 1px solid #888989;
+  border-bottom: 1px solid #888989; /* Add a bottom border */
 }
 
+/* Note Styles */
+
+/* Styling for elements with class "note" */
 .note {
-  font-size: 0.6rem;
-  margin: 5px 0;
-  padding: 0 8px 0 8px;
-  text-indent: -8px;
+  font-size: 0.6rem; /* Set smaller font size */
+  margin: 5px 0; /* Set margin on top and bottom */
+  padding: 0 8px; /* Add padding on left and right */
+  text-indent: -8px; /* Apply negative text indent */
 }

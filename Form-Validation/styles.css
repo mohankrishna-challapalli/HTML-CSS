@@ -1,10 +1,13 @@
+/* Import Google Fonts */
 @import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap");
 
+/* Reset default box-sizing and set font family */
 * {
   box-sizing: border-box;
 }
 
+/* Body styles */
 body {
   background-color: #9b59b6;
   font-family: "Open Sans", sans-serif;
@@ -15,6 +18,7 @@ body {
   margin: 0;
 }
 
+/* Main container styles */
 .container {
   background-color: #fff;
   border-radius: 5px;
@@ -24,6 +28,7 @@ body {
   max-width: 100%;
 }
 
+/* Header styles */
 .header {
   border-bottom: 1px solid #f0f0f0;
   background-color: #f7f7f7;
@@ -34,10 +39,12 @@ body {
   margin: 0;
 }
 
+/* Form styles */
 .form {
   padding: 30px 40px;
 }
 
+/* Form control styles */
 .form-control {
   margin-bottom: 10px;
   padding-bottom: 20px;
@@ -64,14 +71,17 @@ body {
   border-color: #777;
 }
 
+/* Success state for input */
 .form-control.success input {
   border-color: #2ecc71;
 }
 
+/* Error state for input */
 .form-control.error input {
   border-color: #e74c3c;
 }
 
+/* Icons and small error messages */
 .form-control i {
   visibility: hidden;
   position: absolute;
@@ -79,16 +89,19 @@ body {
   right: 10px;
 }
 
+/* Success icon for input */
 .form-control.success i.fa-check-circle {
   color: #2ecc71;
   visibility: visible;
 }
 
+/* Error icon for input */
 .form-control.error i.fa-exclamation-circle {
   color: #e74c3c;
   visibility: visible;
 }
 
+/* Small error message */
 .form-control small {
   color: #e74c3c;
   position: absolute;
@@ -97,10 +110,12 @@ body {
   visibility: hidden;
 }
 
+/* Visible small error message for error state */
 .form-control.error small {
   visibility: visible;
 }
 
+/* Button styles */
 .form button {
   background-color: #8e44ad;
   border: 2px solid #8e44ad;
@@ -115,6 +130,7 @@ body {
 }
 
 /* SOCIAL PANEL CSS */
+/* Social panel container */
 .social-panel-container {
   position: fixed;
   right: 0;
@@ -123,10 +139,12 @@ body {
   transition: transform 0.4s ease-in-out;
 }
 
+/* Visible social panel container */
 .social-panel-container.visible {
   transform: translateX(-10px);
 }
 
+/* Social panel styles */
 .social-panel {
   background-color: #fff;
   border-radius: 16px;
@@ -143,6 +161,7 @@ body {
   max-width: calc(100% - 10px);
 }
 
+/* Close button styles */
 .social-panel button.close-btn {
   border: 0;
   color: #97a5ce;
@@ -153,10 +172,12 @@ body {
   right: 5px;
 }
 
+/* Remove focus outline for close button */
 .social-panel button.close-btn:focus {
   outline: none;
 }
 
+/* Paragraph styles for panel text */
 .social-panel p {
   background-color: #001f61;
   border-radius: 0 0 10px 10px;
@@ -173,15 +194,18 @@ body {
   width: 235px;
 }
 
+/* Icon styles in panel text */
 .social-panel p i {
   margin: 0 5px;
 }
 
+/* Link styles in panel text */
 .social-panel p a {
   color: #ff7500;
   text-decoration: none;
 }
 
+/* Social panel header styles */
 .social-panel h4 {
   margin: 20px 0;
   color: #97a5ce;
@@ -191,6 +215,7 @@ body {
   text-transform: uppercase;
 }
 
+/* Social panel list styles */
 .social-panel ul {
   display: flex;
   list-style-type: none;
@@ -198,10 +223,12 @@ body {
   margin: 0;
 }
 
+/* Social panel list item styles */
 .social-panel ul li {
   margin: 0 10px;
 }
 
+/* Social panel link styles */
 .social-panel ul li a {
   border: 1px solid #dce1f2;
   border-radius: 50%;
@@ -215,11 +242,13 @@ body {
   text-decoration: none;
 }
 
+/* Hover effect for social panel links */
 .social-panel ul li a:hover {
   border-color: #ff6a00;
   box-shadow: 0 9px 12px -9px #ff6a00;
 }
 
+/* Floating button styles */
 .floating-btn {
   border-radius: 26.5px;
   background-color: #001f61;
@@ -236,15 +265,18 @@ body {
   z-index: 999;
 }
 
+/* Hover effect for floating button */
 .floating-btn:hover {
   background-color: #ffffff;
   color: #001f61;
 }
 
+/* Remove focus outline for floating button */
 .floating-btn:focus {
   outline: none;
 }
 
+/* Floating text styles */
 .floating-text {
   background-color: #001f61;
   border-radius: 10px 10px 0 0;
@@ -259,16 +291,20 @@ body {
   z-index: 998;
 }
 
+/* Floating text link styles */
 .floating-text a {
   color: #ff7500;
   text-decoration: none;
 }
 
+/* Media query for smaller screens */
 @media screen and (max-width: 480px) {
+  /* Adjust social panel visibility for smaller screens */
   .social-panel-container.visible {
     transform: translateX(0px);
   }
 
+  /* Adjust floating button position for smaller screens */
   .floating-btn {
     right: 10px;
   }

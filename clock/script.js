@@ -1,3 +1,4 @@
+// Query Selectors for Elements
 const hourEl = document.querySelector(".hour");
 const minuteEl = document.querySelector(".minute");
 const secondEl = document.querySelector(".second");
@@ -5,6 +6,7 @@ const timeEl = document.querySelector(".time");
 const dateEl = document.querySelector(".date");
 const toggle = document.querySelector(".toggle");
 
+// Arrays for Days and Months
 const days = [
   "Sunday",
   "Monday",
@@ -29,6 +31,7 @@ const months = [
   "Dec",
 ];
 
+// Event Listener for Dark Mode Toggle
 toggle.addEventListener("click", (e) => {
   const html = document.querySelector("html");
   if (html.classList.contains("dark")) {
@@ -40,6 +43,7 @@ toggle.addEventListener("click", (e) => {
   }
 });
 
+// Function to Set and Update Time
 function setTime() {
   const time = new Date();
   const month = time.getMonth();
@@ -51,6 +55,7 @@ function setTime() {
   const seconds = time.getSeconds();
   const ampm = hours >= 12 ? "PM" : "AM";
 
+  // Rotate Clock Hands
   hourEl.style.transform = `translate(-50%, -100%) rotate(${scale(
     hoursForClock,
     0,
@@ -73,17 +78,20 @@ function setTime() {
     360
   )}deg)`;
 
+  // Display Time and Date
   timeEl.innerHTML = `${hoursForClock}:${
     minutes < 10 ? `0${minutes}` : minutes
   } ${ampm}`;
   dateEl.innerHTML = `${days[day]}, ${months[month]} <span class="circle">${date}</span>`;
 }
 
-// StackOverflow https://stackoverflow.com/questions/10756313/javascript-jquery-map-a-range-of-numbers-to-another-range-of-numbers
+// Helper Function for Scaling Values
 const scale = (num, in_min, in_max, out_min, out_max) => {
   return ((num - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min;
 };
 
+// Initial Call to Set Time
 setTime();
 
+// Update Time Every Second
 setInterval(setTime, 1000);

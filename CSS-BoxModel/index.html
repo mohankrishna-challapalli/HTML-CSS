@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Document Metadata -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Page Title -->
     <title>Creative CSS Box Model</title>
+
+    <!-- Inline CSS Styles -->
     <style>
+      /* Styling for the Body */
       body {
         display: flex;
         justify-content: center;
@@ -14,6 +20,7 @@
         background-color: #f3f3f3;
       }
 
+      /* Styling for the Outer Container */
       .container {
         border: 10px solid #5e35b1;
         padding: 40px;
@@ -22,6 +29,7 @@
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
       }
 
+      /* Styling for the Middle Content */
       .content {
         border: 10px solid #0288d1;
         padding: 30px;
@@ -30,6 +38,7 @@
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
       }
 
+      /* Styling for the Inner Content */
       .inner-content {
         border: 10px solid #ffeb3b;
         padding: 20px;
@@ -38,6 +47,7 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
       }
 
+      /* Styling for Text */
       .text {
         font-size: 24px;
         color: white;
@@ -48,9 +58,13 @@
     </style>
   </head>
   <body>
+    <!-- Outer Container -->
     <div class="container">
+      <!-- Middle Content -->
       <div class="content">
+        <!-- Inner Content -->
         <div class="inner-content">
+          <!-- Text -->
           <p class="text">CSS Box Model</p>
         </div>
       </div>

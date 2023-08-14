@@ -1,29 +1,33 @@
+/* Global Styles */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
+  font-family: Arial, sans-serif; /* Default font family */
+  margin: 0; /* Removes default margin */
   display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: #f0f0f0;
+  justify-content: center; /* Horizontally centers content */
+  align-items: center; /* Vertically centers content */
+  min-height: 100vh; /* Minimum viewport height */
+  background-color: #f0f0f0; /* Background color for the entire page */
 }
 
+/* Calculator Container */
 .calculator {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-  width: 300px;
-  padding: 20px;
+  border: 1px solid #ccc; /* Adds a border */
+  border-radius: 5px; /* Rounds the corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adds a shadow */
+  background-color: #fff; /* Background color for the calculator */
+  width: 300px; /* Sets the width */
+  padding: 20px; /* Adds padding around the content */
 }
 
+/* Display Area */
 .display {
-  text-align: right;
-  margin-bottom: 10px;
+  text-align: right; /* Right-aligns text */
+  margin-bottom: 10px; /* Adds space below the display */
 }
 
+/* Button Grid */
 .buttons {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  display: grid; /* Sets display to grid */
+  grid-template-columns: repeat(4, 1fr); /* Creates 4 equal-width columns */
+  gap: 10px; /* Adds spacing between buttons */
 }

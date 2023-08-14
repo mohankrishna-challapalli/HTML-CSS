@@ -12,28 +12,34 @@ for (const empty of empties) {
 }
 
 function dragStart() {
+  // Add "hold" class to the dragged element and use setTimeout to hide it instantly
   this.className += " hold";
   setTimeout(() => (this.className = "invisible"), 0);
 }
 
 function dragEnd() {
+  // Reset the class name of the dragged element
   this.className = "fill";
 }
 
 function dragOver(e) {
+  // Prevent the default behavior of dragover to allow drop
   e.preventDefault();
 }
 
 function dragEnter(e) {
+  // Add "hovered" class to the empty container when the dragged element enters it
   e.preventDefault();
   this.className += " hovered";
 }
 
 function dragLeave() {
+  // Remove "hovered" class from the empty container when the dragged element leaves it
   this.className = "empty";
 }
 
 function dragDrop() {
+  // Reset the class name of the empty container and append the dragged element to it
   this.className = "empty";
   this.append(fill);
 }

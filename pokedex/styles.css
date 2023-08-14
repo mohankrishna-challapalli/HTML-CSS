@@ -1,67 +1,113 @@
+/* Font Import */
+
+/* Import the "Lato" font styles from Google Fonts */
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400&display=swap");
 
+/* Global Styles */
+
+/* Apply "border-box" sizing model to all elements */
 * {
   box-sizing: border-box;
 }
 
+/* Body Styles */
+
 body {
   background: #efefbb;
+  /* Apply a gradient background from left to right */
   background: linear-gradient(to right, #d4d3dd, #efefbb);
   font-family: "Lato", sans-serif;
+  /* Set the font-family to "Lato" and fallback to sans-serif */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 0;
+  /* Reset the margin to 0 to prevent any extra spacing */
 }
+
+/* Heading Styles */
 
 h1 {
   letter-spacing: 3px;
+  /* Add letter-spacing to the heading text */
 }
+
+/* Poke Container Styles */
 
 .poke-container {
   display: flex;
   flex-wrap: wrap;
+  /* Allow flex items to wrap to the next line */
   align-items: space-between;
+  /* Distribute space evenly between flex items */
   justify-content: center;
+  /* Center-align flex items horizontally */
   margin: 0 auto;
+  /* Center the container horizontally and reset margins */
   max-width: 1200px;
+  /* Set a maximum width for the container */
 }
+
+/* Pokemon Card Styles */
 
 .pokemon {
   background-color: #eee;
+  /* Set a light gray background color */
   border-radius: 10px;
+  /* Add rounded corners to the card */
   box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+  /* Apply a subtle box shadow for depth */
   margin: 10px;
+  /* Add margin around each Pokemon card */
   padding: 20px;
+  /* Add padding inside the card */
   text-align: center;
+  /* Center-align the content within the card */
 }
+
+/* Pokemon Image Container Styles */
 
 .pokemon .img-container {
   background-color: rgba(255, 255, 255, 0.6);
+  /* Set a semi-transparent white background color */
   border-radius: 50%;
+  /* Create a circular image container */
   width: 120px;
   height: 120px;
+  /* Set dimensions for the circular container */
   text-align: center;
+  /* Center-align the content within the container */
 }
 
 .pokemon .img-container img {
   max-width: 90%;
+  /* Limit the maximum width of the image */
   margin-top: 20px;
+  /* Add top margin to the image */
 }
+
+/* Pokemon Info Styles */
 
 .pokemon .info {
   margin-top: 20px;
+  /* Add top margin to the info section */
 }
 
 .pokemon .info .number {
   background-color: rgba(0, 0, 0, 0.1);
+  /* Set a semi-transparent black background color */
   padding: 5px 10px;
+  /* Add padding to the number element */
   border-radius: 10px;
+  /* Add rounded corners to the number element */
   font-size: 0.8em;
+  /* Reduce the font size of the number element */
 }
 
 .pokemon .info .name {
   margin: 15px 0 7px;
+  /* Add margins to the name element */
   letter-spacing: 1px;
+  /* Add letter-spacing to the name element */
 }
