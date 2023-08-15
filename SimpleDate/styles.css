@@ -1,14 +1,16 @@
+/* Styling for the body element */
 body {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  height: 100vh; /* Set the height of the viewport */
+  margin: 0; /* Remove default margin */
 }
 
+/* Styling for the container that displays the current date */
 .date-container {
-  background-color: #f1f1f1;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: #f1f1f1; /* Set background color */
+  padding: 20px; /* Add padding around the content */
+  border-radius: 5px; /* Round the corners of the container */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
 }

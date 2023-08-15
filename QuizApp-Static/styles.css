@@ -1,186 +1,214 @@
+/* Media query to enable smooth scrolling if user prefers normal motion */
 @media (prefers-reduced-motion: no-preference) {
   * {
     scroll-behavior: smooth;
   }
 }
 
+/* Basic styling for the entire page */
 body {
-  background: #f5f6f7;
-  color: #1b1b32;
-  font-family: Helvetica;
-  margin: 0;
+  background: #f5f6f7; /* Background color */
+  color: #1b1b32; /* Text color */
+  font-family: Helvetica; /* Font family for text */
+  margin: 0; /* Reset margin for the body element */
 }
 
+/* Styling for the header section */
 header {
-  width: 100%;
-  height: 50px;
-  background-color: #1b1b32;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: 0;
+  width: 100%; /* Full width */
+  height: 50px; /* Height of the header */
+  background-color: #1b1b32; /* Background color */
+  display: flex; /* Flex layout */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center vertically */
+  position: fixed; /* Fixed position at the top */
+  top: 0; /* Position at the top of the viewport */
 }
 
+/* Styling for the logo */
 #logo {
-  width: max(100px, 18vw);
-  background-color: #0a0a23;
-  aspect-ratio: 35 / 4;
-  padding: 0.4rem;
+  width: max(100px, 18vw); /* Responsive logo width */
+  background-color: #0a0a23; /* Background color */
+  aspect-ratio: 35 / 4; /* Aspect ratio for logo */
+  padding: 0.4rem; /* Padding inside the logo */
 }
 
+/* Styling for the main heading */
 h1 {
-  color: #f1be32;
-  font-size: min(5vw, 1.2em);
-  text-align: center;
+  color: #f1be32; /* Heading text color */
+  font-size: min(5vw, 1.2em); /* Responsive font size */
+  text-align: center; /* Center-align heading text */
 }
 
+/* Styling for the navigation menu */
 nav {
-  width: 50%;
-  max-width: 300px;
-  height: 50px;
+  width: 50%; /* Half of the container width */
+  max-width: 300px; /* Maximum width for responsiveness */
+  height: 50px; /* Height of the navigation */
 }
 
+/* Styling for navigation links list */
 nav > ul {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  align-items: center;
-  padding-inline-start: 0;
-  margin-block: 0;
-  height: 100%;
+  display: flex; /* Flex layout */
+  justify-content: space-evenly; /* Even space between items */
+  flex-wrap: wrap; /* Wrap to new line if needed */
+  align-items: center; /* Center vertically */
+  padding-inline-start: 0; /* Reset padding for list */
+  margin-block: 0; /* Reset margin for list */
+  height: 100%; /* Full height of the navigation */
 }
 
+/* Styling for navigation list items */
 nav > ul > li {
-  color: #dfdfe2;
-  margin: 0 0.2rem;
-  padding: 0.2rem;
-  display: block;
+  color: #dfdfe2; /* Text color */
+  margin: 0 0.2rem; /* Margin around items */
+  padding: 0.2rem; /* Padding inside items */
+  display: block; /* Display as block element */
 }
 
+/* Hover effect for navigation links */
 nav > ul > li:hover {
-  background-color: #dfdfe2;
-  color: #1b1b32;
-  cursor: pointer;
+  background-color: #dfdfe2; /* Background color on hover */
+  color: #1b1b32; /* Text color on hover */
+  cursor: pointer; /* Cursor style on hover */
 }
 
+/* Styling for navigation links */
 li > a {
-  color: inherit;
-  text-decoration: none;
+  color: inherit; /* Inherit text color from parent */
+  text-decoration: none; /* Remove underline */
 }
 
+/* Styling for the main content */
 main {
-  padding-top: 50px;
+  padding-top: 50px; /* Add padding to avoid content overlapping header */
 }
 
+/* Styling for sections */
 section {
-  width: 80%;
-  margin: 0 auto 10px auto;
-  max-width: 600px;
+  width: 80%; /* Width of the content */
+  margin: 0 auto 10px auto; /* Center content with margin at the bottom */
+  max-width: 600px; /* Maximum width for responsiveness */
 }
 
+/* Styling for headings */
 h1,
 h2 {
-  font-family: Verdana, Tahoma;
+  font-family: Verdana, Tahoma; /* Font family for headings */
 }
 
+/* Styling for section headings */
 h2 {
-  border-bottom: 4px solid #dfdfe2;
-  margin-top: 0px;
-  padding-top: 60px;
+  border-bottom: 4px solid #dfdfe2; /* Underline for headings */
+  margin-top: 0px; /* Remove top margin for first heading */
+  padding-top: 60px; /* Add space above heading */
 }
 
+/* Styling for student information inputs */
 .info {
-  padding: 10px 0 0 5px;
+  padding: 10px 0 0 5px; /* Padding for spacing */
 }
 
+/* Styling for form rows */
 .formrow {
-  margin-top: 30px;
-  padding: 0px 15px;
+  margin-top: 30px; /* Margin at the top */
+  padding: 0px 15px; /* Padding for spacing */
 }
 
+/* Styling for input fields */
 input {
-  font-size: 16px;
+  font-size: 16px; /* Font size for input */
 }
 
+/* Styling for labels and input fields */
 .info label,
 .info input {
-  display: inline-block;
+  display: inline-block; /* Display elements inline */
 }
 
 .info input {
-  width: 50%;
-  text-align: left;
+  width: 50%; /* Input width */
+  text-align: left; /* Align text to the left */
 }
 
 .info label {
-  width: 10%;
-  min-width: 55px;
-  text-align: right;
+  width: 10%; /* Label width */
+  min-width: 55px; /* Minimum label width */
+  text-align: right; /* Align text to the right */
 }
 
+/* Styling for question blocks */
 .question-block {
-  text-align: left;
-  display: block;
-  width: 100%;
-  margin-top: 20px;
-  padding-top: 5px;
+  text-align: left; /* Align text to the left */
+  display: block; /* Display as block element */
+  width: 100%; /* Full width */
+  margin-top: 20px; /* Margin at the top */
+  padding-top: 5px; /* Padding at the top */
 }
 
+/* Styling for question numbers */
 p {
-  margin-top: 5px;
-  padding-left: 15px;
-  font-size: 20px;
+  margin-top: 5px; /* Margin at the top */
+  padding-left: 15px; /* Padding on the left */
+  font-size: 20px; /* Font size for question numbers */
 }
 
+/* Adding "Question #" before question numbers */
 p::before {
-  content: "Question #";
+  content: "Question #"; /* Content before each question number */
 }
 
+/* Styling for question fieldsets */
 .question {
-  border: none;
-  padding-bottom: 0;
+  border: none; /* Remove border */
+  padding-bottom: 0; /* Remove padding at the bottom */
 }
 
+/* Styling for answers list */
 .answers-list {
-  list-style: none;
-  padding: 0;
+  list-style: none; /* Remove list bullets */
+  padding: 0; /* Reset padding for the list */
 }
 
+/* Styling for the submit button */
 button {
-  display: block;
-  margin: 40px auto;
-  width: 40%;
-  padding: 15px;
-  font-size: 23px;
-  background: #d0d0d5;
-  border: 3px solid #3b3b4f;
+  display: block; /* Display as block element */
+  margin: 40px auto; /* Margin for centering */
+  width: 40%; /* Button width */
+  padding: 15px; /* Padding inside the button */
+  font-size: 23px; /* Font size for the button */
+  background: #d0d0d5; /* Background color */
+  border: 3px solid #3b3b4f; /* Border style */
 }
 
+/* Styling for the footer section */
 footer {
-  background-color: #2a2a40;
-  display: flex;
-  justify-content: center;
+  background-color: #2a2a40; /* Background color */
+  display: flex; /* Flex layout */
+  justify-content: center; /* Center content horizontally */
 }
 
+/* Styling for footer text */
 footer,
 footer a {
-  color: #dfdfe2;
+  color: #dfdfe2; /* Text color */
 }
 
+/* Styling for address information */
 address {
-  text-align: center;
-  padding: 0.3em;
+  text-align: center; /* Center-align text */
+  padding: 0.3em; /* Padding around the address */
 }
 
+/* CSS for hiding content visually, but still accessible to screen readers */
 .sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
+  position: absolute; /* Position absolutely */
+  width: 1px; /* Very small width */
+  height: 1px; /* Very small height */
+  padding: 0; /* No padding */
+  margin: -1px; /* Negative margin to hide */
+  overflow: hidden; /* Hide overflow content */
+  clip: rect(0, 0, 0, 0); /* Clip to hide content */
+  white-space: nowrap; /* Prevent line breaks */
+  border: 0; /* No border */
 }

@@ -1,47 +1,54 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
+/* Reset box-sizing to border-box for all elements */
 * {
   box-sizing: border-box;
 }
 
+/* Styling for the body */
 body {
-  background-color: #efedd6;
-  font-family: "Roboto", sans-serif;
+  background-color: #efedd6; /* Background color */
+  font-family: "Roboto", sans-serif; /* Use Roboto font */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 0;
-  overflow-x: hidden;
+  overflow-x: hidden; /* Hide horizontal overflow */
 }
 
+/* Styling for heading level 1 */
 h1 {
-  margin: 10px;
+  margin: 10px; /* Margin around the heading */
 }
 
+/* Styling for the boxes */
 .box {
-  background-color: steelblue;
-  color: #fff;
+  background-color: steelblue; /* Background color */
+  color: #fff; /* Text color */
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 400px;
-  height: 200px;
-  margin: 10px;
-  border-radius: 10px;
-  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
-  transform: translateX(400%);
-  transition: transform 0.4s ease;
+  width: 400px; /* Box width */
+  height: 200px; /* Box height */
+  margin: 10px; /* Margin around each box */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3); /* Box shadow */
+  transform: translateX(400%); /* Initial position outside the viewport */
+  transition: transform 0.4s ease; /* Transition effect */
 }
 
+/* Styling for even-numbered boxes */
 .box:nth-of-type(even) {
-  transform: translateX(-400%);
+  transform: translateX(-400%); /* Initial position for even boxes */
 }
 
+/* Styling for boxes with the "show" class */
 .box.show {
-  transform: translateX(0);
+  transform: translateX(0); /* Move boxes to their final position */
 }
 
+/* Styling for heading level 2 within boxes */
 .box h2 {
-  font-size: 45px;
+  font-size: 45px; /* Font size */
 }

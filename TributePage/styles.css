@@ -1,9 +1,11 @@
+/* Set default styles for the entire page */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
+/* Style the main content container */
 #main {
   text-align: center;
   max-width: 800px;
@@ -11,15 +13,18 @@ body {
   padding: 20px;
 }
 
+/* Style the title of the tribute page */
 #title {
   font-size: 36px;
   margin-bottom: 20px;
 }
 
+/* Style the container for the image and caption */
 #img-div {
   margin: 20px 0;
 }
 
+/* Style the image to be responsive and centered */
 #image {
   max-width: 100%;
   height: auto;
@@ -27,17 +32,20 @@ body {
   margin: 0 auto;
 }
 
+/* Style the caption below the image */
 #img-caption {
   font-size: 14px;
   margin-top: 10px;
 }
 
+/* Style the paragraphs containing information about Oppenheimer */
 #tribute-info {
   font-size: 18px;
   line-height: 1.6;
   margin: 20px 0;
 }
 
+/* Style the link to Wikipedia for more information */
 #tribute-link {
   font-size: 16px;
   color: #007bff;
@@ -46,6 +54,7 @@ body {
   margin-top: 20px;
 }
 
+/* Style the link when hovered over */
 #tribute-link:hover {
   text-decoration: underline;
 }

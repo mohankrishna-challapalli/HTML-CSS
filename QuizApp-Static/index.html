@@ -1,37 +1,63 @@
+<!-- Start of the HTML document -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Document head contains metadata and external resources -->
+
+    <!-- Character encoding and viewport for responsive design -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Brief description of the page's purpose -->
     <meta
       name="description"
       content="freeCodeCamp Accessibility Quiz practice project"
     />
+
+    <!-- Title of the page -->
     <title>Accessibility Quiz</title>
+
+    <!-- Link to an external stylesheet for styling -->
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Page content starts here -->
+
+    <!-- Header section with site logo, title, and navigation -->
     <header>
+      <!-- freeCodeCamp logo -->
       <img
         id="logo"
         src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg"
       />
+
+      <!-- Main heading of the page -->
       <h1>HTML/CSS Quiz</h1>
+
+      <!-- Navigation menu -->
       <nav>
         <ul>
+          <!-- Navigation links with access keys for keyboard shortcuts -->
           <li><a href="#student-info" accesskey="i">INFO</a></li>
-          <li><a href="#html-questions" accesskey="i">HTML</a></li>
-          <li><a href="#css-questions" accesskey="i">CSS</a></li>
+          <li><a href="#html-questions" accesskey="h">HTML</a></li>
+          <li><a href="#css-questions" accesskey="c">CSS</a></li>
         </ul>
       </nav>
     </header>
+
+    <!-- Main content of the page -->
     <main>
+      <!-- Form for the quiz -->
       <form
         method="post"
         action="https://freecodecamp.org/practice-project/accessibility-quiz"
       >
+        <!-- Student Information Section -->
         <section role="region" aria-labelledby="student-info">
+          <!-- Heading for the section -->
           <h2 id="student-info">Student Info</h2>
+
+          <!-- Input fields for student information -->
           <div class="info">
             <label for="student-name">Name:</label>
             <input type="text" name="student-name" id="student-name" />
@@ -47,23 +73,33 @@
             <input type="date" name="birth-date" id="birth-date" />
           </div>
         </section>
+
+        <!-- HTML Questions Section -->
         <section role="region" aria-labelledby="html-questions">
+          <!-- Heading for the section -->
           <h2 id="html-questions">HTML</h2>
+
+          <!-- First HTML question -->
           <div class="question-block">
             <p>1</p>
             <fieldset class="question" name="html-question-one">
+              <!-- Question content -->
               <legend>
                 The legend element represents a caption for the content of its
                 parent fieldset element
               </legend>
+
+              <!-- List of answer options -->
               <ul class="answers-list">
                 <li>
+                  <!-- Radio button for the true answer -->
                   <label for="q1-a1">
                     <input type="radio" id="q1-a1" name="q1" value="true" />
                     True
                   </label>
                 </li>
                 <li>
+                  <!-- Radio button for the false answer -->
                   <label for="q1-a2">
                     <input type="radio" id="q1-a2" name="q1" value="false" />
                     False
@@ -72,36 +108,22 @@
               </ul>
             </fieldset>
           </div>
-          <div class="question-block">
-            <p>2</p>
-            <fieldset class="question" name="html-question-two">
-              <legend>
-                A label element nesting an input element is required to have a
-                for attribute with the same value as the input's id
-              </legend>
-              <ul class="answers-list">
-                <li>
-                  <label for="q2-a1">
-                    <input type="radio" id="q2-a1" name="q2" value="true" />
-                    True
-                  </label>
-                </li>
-                <li>
-                  <label for="q2-a2">
-                    <input type="radio" id="q2-a2" name="q2" value="false" />
-                    False
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-          </div>
+          <!-- Second HTML Question... -->
         </section>
+
+        <!-- CSS Questions Section -->
         <section role="region" aria-labelledby="css-questions">
+          <!-- Heading for the section -->
           <h2 id="css-questions">CSS</h2>
+
+          <!-- Form row containing questions -->
           <div class="formrow">
+            <!-- Question about being a frontend developer -->
             <div class="question-block">
               <label for="customer">Are you a frontend developer?</label>
             </div>
+
+            <!-- Dropdown for selecting an answer -->
             <div class="answer">
               <select name="customer" id="customer" required>
                 <option value="">Select an option</option>
@@ -109,9 +131,13 @@
                 <option value="no">No</option>
               </select>
             </div>
+
+            <!-- Question about having CSS questions -->
             <div class="question-block">
               <label for="css-questions">Do you have any questions:</label>
             </div>
+
+            <!-- Text area for entering CSS questions -->
             <div class="answer">
               <textarea
                 id="css-questions"
@@ -123,12 +149,19 @@
             </div>
           </div>
         </section>
+
+        <!-- Submit button for the form -->
         <button type="submit">Send</button>
       </form>
     </main>
+
+    <!-- Footer section with contact information -->
     <footer>
       <address>
+        <!-- Link to freeCodeCamp website -->
         <a href="https://freecodecamp.org">freeCodeCamp</a><br />
+
+        <!-- Address information -->
         San Francisco<br />
         California<br />
         USA
@@ -136,3 +169,4 @@
     </footer>
   </body>
 </html>
+<!-- End of the HTML document -->

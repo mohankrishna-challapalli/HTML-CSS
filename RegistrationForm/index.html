@@ -4,53 +4,60 @@
     <meta charset="UTF-8" />
     <title>Registration Form</title>
     <link rel="stylesheet" href="styles.css" />
+    <!-- Link to an external stylesheet -->
   </head>
   <body>
     <h1>Registration Form</h1>
+    <!-- Main heading -->
     <p>Please fill out this form with the required information</p>
+    <!-- Description paragraph -->
     <form method="post" action="https://register-demo.freecodecamp.org">
+      <!-- Start of the registration form -->
       <fieldset>
-        <label for="first-name"
-          >Enter Your First Name:
-          <input id="first-name" name="first-name" type="text" required
-        /></label>
-        <label for="last-name"
-          >Enter Your Last Name:
-          <input id="last-name" name="last-name" type="text" required
-        /></label>
-        <label for="email"
-          >Enter Your Email:
-          <input id="email" name="email" type="email" required
-        /></label>
-        <label for="new-password"
-          >Create a New Password:
+        <!-- Fieldset for personal information -->
+        <label for="first-name">
+          Enter Your First Name:
+          <input id="first-name" name="first-name" type="text" required />
+        </label>
+        <label for="last-name">
+          Enter Your Last Name:
+          <input id="last-name" name="last-name" type="text" required />
+        </label>
+        <label for="email">
+          Enter Your Email:
+          <input id="email" name="email" type="email" required />
+        </label>
+        <label for="new-password">
+          Create a New Password:
           <input
             id="new-password"
             name="new-password"
             type="password"
             pattern="[a-z0-5]{8,}"
             required
-        /></label>
+          />
+        </label>
       </fieldset>
       <fieldset>
-        <label for="personal-account"
-          ><input
+        <!-- Fieldset for account type and terms -->
+        <label for="personal-account">
+          <input
             id="personal-account"
             type="radio"
             name="account-type"
             class="inline"
           />
-          Personal Account</label
-        >
-        <label for="business-account"
-          ><input
+          Personal Account
+        </label>
+        <label for="business-account">
+          <input
             id="business-account"
             type="radio"
             name="account-type"
             class="inline"
           />
-          Business Account</label
-        >
+          Business Account
+        </label>
         <label for="terms-and-conditions">
           <input
             id="terms-and-conditions"
@@ -66,16 +73,17 @@
         </label>
       </fieldset>
       <fieldset>
-        <label for="profile-picture"
-          >Upload a profile picture:
-          <input id="profile-picture" type="file" name="file"
-        /></label>
-        <label for="age"
-          >Input your age (years):
-          <input id="age" type="number" name="age" min="13" max="120"
-        /></label>
-        <label for="referrer"
-          >How did you hear about us?
+        <!-- Fieldset for additional information -->
+        <label for="profile-picture">
+          Upload a profile picture:
+          <input id="profile-picture" type="file" name="file" />
+        </label>
+        <label for="age">
+          Input your age (years):
+          <input id="age" type="number" name="age" min="13" max="120" />
+        </label>
+        <label for="referrer">
+          How did you hear about us?
           <select id="referrer" name="referrer">
             <option value="">(select one)</option>
             <option value="1">freeCodeCamp News</option>
@@ -84,8 +92,8 @@
             <option value="4">Other</option>
           </select>
         </label>
-        <label for="bio"
-          >Provide a bio:
+        <label for="bio">
+          Provide a bio:
           <textarea
             id="bio"
             name="bio"
@@ -96,6 +104,7 @@
         </label>
       </fieldset>
       <input type="submit" value="Submit" />
+      <!-- Submit button -->
     </form>
   </body>
 </html>
