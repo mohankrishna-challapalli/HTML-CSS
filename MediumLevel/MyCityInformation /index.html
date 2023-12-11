@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>City Information Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>My City Information</h1>
+    </header>
+
+    <section>
+      <select id="city-dropdown" onchange="showSelectedCity()">
+        <option value="select">Select a City</option>
+        <option value="hyderabad">Hyderabad</option>
+        <option value="chennai">Chennai</option>
+        <option value="bengaluru">Bengaluru</option>
+      </select>
+    </section>
+
+    <div id="city-details" style="display: none">
+      <h2 id="city-title"></h2>
+      <p id="city-description"></p>
+      <button onclick="hideCityInformation()">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
